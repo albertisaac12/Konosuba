@@ -33,11 +33,11 @@ Local File Inclusion (LFI) is a web vulnerability that allows an attacker to acc
 1. Ensure you have Python installed on your system. You can download it from [Python's official website](https://www.python.org/downloads/).
 2. Clone this repository to your local machine using Git:
    ```bash
-   git clone https://github.com/albertissac12/konosuba.git
+   git clone https://github.com/albertisaac12/Konosuba.git
    ```
 3. Navigate to the cloned directory:
    ```bash
-   cd konosuba
+   cd Konosuba
    ```
 4. Install the required Python libraries using pip:
    ```bash
