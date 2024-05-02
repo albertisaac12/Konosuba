@@ -53,6 +53,7 @@ python3 konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
 
 ## Options
 
+- `-h, --help`: Prompts the Help Section.
 - `<URL>`: The URL of the web application to test for LFI vulnerabilities.
 - `-H, --headers`: Optional. Headers in the format `'HeaderName: Value'`. Separate multiple headers with a comma and space.
 - `-C, --cookies`: Optional. Cookies in the format `'CookieName=CookieValue'`. Separate multiple cookies with a semicolon and space.
@@ -61,6 +62,10 @@ python3 konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
 
 - NOTE1: The number of threads and wordlists must match example, if -w are wordlist1.txt wordlist2.txt then, -t must be 2.  [ -w <worlist1> <wordlist2> -t 2 ]
 - NOTE2: The number of output files generated will be equal to the number of wordlists provided.
+
+<div style="text-align:center">
+    <img src="https://github.com/albertisaac12/Konosuba/assets/91803132/cc0052aa-be82-4e1a-899c-09a78ec6d560">
+  </div>
 
 ## AdvanceUsage
 
