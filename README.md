@@ -98,6 +98,10 @@ After running the script, potential vulnerable URLs will be saved to the `output
     <img src="https://github.com/albertisaac12/Konosuba/assets/91803132/9bd542ef-16b0-4e3d-874d-f16d30b282bc" alt="Step 1">
   </div>
 - Accessing the DVWA: http://localhost:8080 , click on the File Inclusion section
+   <div style="text-align:center">
+    <img src="https://github.com/albertisaac12/Konosuba/assets/91803132/10fee3ac-f69e-456a-8901-63d16d1e0e19" alt="Step 1">
+  </div>
+
   
 
 ## Disclaimer
