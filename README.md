@@ -78,15 +78,21 @@ Usage with Cookies:
 ```bash
 python3 konosuba.py -C '<Cookie>' <URL>
 ```
-Usage with Multiple word-lists:
+
+Usage with Header and Cookies:
 ```bash
-python3 konosuba.py -C '<Cookie>' -w <wordlit1.txt> <wordlist2.txt> <URL>
+python3 konosuba.py -H <header> -C '<Cookie>' <URL>
+```
+
+Usage with Multiple word-lists with mandatory threading:
+```bash
+python3 konosuba.py -H <header> -C '<Cookie>' -w <wordlit1.txt> <wordlist2.txt> -t <thread number equal to number of wordlist> <URL>
 ```
 
 ## Example
 
 ```bash
-python3 konosuba.py http://example.com -H "User-Agent: Mozilla/5.0" -C "sessionid=abc123" -w mywordlist.txt
+python3 konosuba.py -H "User-Agent: Mozilla/5.0" -C "sessionid=abc123" -w mywordlist.txt -t 1 http://example.com
 ```
 
 ## Output
