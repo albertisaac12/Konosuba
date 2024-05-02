@@ -26,7 +26,6 @@ Local File Inclusion (LFI) is a web vulnerability that allows an attacker to acc
 - Test for LFI vulnerabilities in web applications.
 - Specify custom headers and cookies.
 - Use a customizable wordlist for payload injection.
-- Generate a detailed report of potential vulnerabilities.
 
 ## Installation
 
