@@ -1,5 +1,4 @@
-
-```markdown
+---
 # Konosuba - Test for LFI Vulnerabilities
 
 This Python script is designed to test for Local File Inclusion (LFI) vulnerabilities in web applications. LFI vulnerabilities occur when a web application allows an attacker to include files on the server, potentially leading to the disclosure of sensitive information or remote code execution.
@@ -79,4 +78,5 @@ Contributions are welcome! If you find a bug or have suggestions for improvement
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
+
+--- 
