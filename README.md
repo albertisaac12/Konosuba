@@ -88,14 +88,17 @@ python3 konosuba.py http://example.com -H "User-Agent: Mozilla/5.0" -C "sessioni
 
 After running the script, potential vulnerable URLs will be saved to the `output.txt` file and all responses will be logged in the console.
 
-##Testing
+## Testing
 
 - Lab setup: dependencies=> docker 
   ```bash
   docker run --rm -it -p 8080:80 vulnerables/web-dvwa
   ```
-- Acessing the DVWA: http://localhost:8080
-- 
+  <div style="text-align:center">
+    <img src="https://github.com/albertisaac12/Konosuba/assets/91803132/9bd542ef-16b0-4e3d-874d-f16d30b282bc" alt="Step 1">
+  </div>
+- Accessing the DVWA: http://localhost:8080 , click on the File Inclusion section
+  
 
 ## Disclaimer
 
