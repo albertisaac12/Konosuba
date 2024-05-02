@@ -8,8 +8,8 @@ This Python script is designed to test for Local File Inclusion (LFI) vulnerabil
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Advanced Usage](#AdvanceUsage)
 - [Options](#options)
+- [Advanced Usage](#AdvanceUsage)
 - [Example](#example)
 - [Output](#output)
 - [Disclaimer](#disclaimer)
@@ -50,6 +50,17 @@ Run the script with the following command-line arguments:
 python3 konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
 ```
 
+## Options
+
+- `<URL>`: The URL of the web application to test for LFI vulnerabilities.
+- `-H, --headers`: Optional. Headers in the format `'HeaderName: Value'`. Separate multiple headers with a comma and space.
+- `-C, --cookies`: Optional. Cookies in the format `'CookieName=CookieValue'`. Separate multiple cookies with a semicolon and space.
+- `-w, --wordlist`: Optional. Path to the wordlist containing LFI payloads. The default is `wordlist.txt`.
+- `-t, --threads`: Optional. Number of threads to use for testing (default is 1).
+
+- NOTE: The number of threads and wordlists must match example, if -w are wordlist1.txt wordlist2.txt then, -t must be 2.  [ -w <worlist1> <wordlist2> -t 2 ]
+
+
 ## AdvanceUsage
 
 Simple Usgae:
@@ -65,16 +76,6 @@ Usage with Multiple word-lists:
 ```bash
 python3 konosuba.py -C '<Cookie>' -w <wordlit1.txt> <wordlist2.txt> <URL>
 ```
-
-## Options
-
-- `<URL>`: The URL of the web application to test for LFI vulnerabilities.
-- `-H, --headers`: Optional. Headers in the format `'HeaderName: Value'`. Separate multiple headers with a comma and space.
-- `-C, --cookies`: Optional. Cookies in the format `'CookieName=CookieValue'`. Separate multiple cookies with a semicolon and space.
-- `-w, --wordlist`: Optional. Path to the wordlist containing LFI payloads. The default is `wordlist.txt`.
-- `-t, --threads`: Optional. Number of threads to use for testing (default is 1).
-
-- NOTE: The number of threads and wordlists must match example, if -w are wordlist1.txt wordlist2.txt then, -t must be 2.  [ -w <worlist1> <wordlist2> -t 2 ]
 
 ## Example
 
