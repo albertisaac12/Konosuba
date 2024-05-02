@@ -12,6 +12,7 @@ This Python script is designed to test for Local File Inclusion (LFI) vulnerabil
 - [Advanced Usage](#AdvanceUsage)
 - [Example](#example)
 - [Output](#output)
+- [Testing](#Testing)
 - [Disclaimer](#disclaimer)
 - [Contributing](#contributing)
 - [License](#license)
@@ -58,8 +59,8 @@ python3 konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
 - `-w, --wordlist`: Optional. Path to the wordlist containing LFI payloads. The default is `wordlist.txt`.
 - `-t, --threads`: Optional. Number of threads to use for testing (default is 1).
 
-- NOTE: The number of threads and wordlists must match example, if -w are wordlist1.txt wordlist2.txt then, -t must be 2.  [ -w <worlist1> <wordlist2> -t 2 ]
-
+- NOTE1: The number of threads and wordlists must match example, if -w are wordlist1.txt wordlist2.txt then, -t must be 2.  [ -w <worlist1> <wordlist2> -t 2 ]
+- NOTE2: The number of output files generated will be equal to the number of wordlists provided.
 
 ## AdvanceUsage
 
@@ -86,6 +87,15 @@ python3 konosuba.py http://example.com -H "User-Agent: Mozilla/5.0" -C "sessioni
 ## Output
 
 After running the script, potential vulnerable URLs will be saved to the `output.txt` file and all responses will be logged in the console.
+
+##Testing
+
+- Lab setup: dependencies=> docker 
+  ```bash
+  docker run --rm -it -p 8080:80 vulnerables/web-dvwa
+  ```
+- Acessing the DVWA: http://localhost:8080
+- 
 
 ## Disclaimer
 
