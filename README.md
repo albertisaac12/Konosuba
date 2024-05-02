@@ -8,6 +8,7 @@ This Python script is designed to test for Local File Inclusion (LFI) vulnerabil
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Advanced Usage](#AdvanceUsage)
 - [Options](#options)
 - [Example](#example)
 - [Output](#output)
@@ -46,7 +47,23 @@ Local File Inclusion (LFI) is a web vulnerability that allows an attacker to acc
 
 Run the script with the following command-line arguments:
 ```bash
-python konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
+python3 konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
+```
+
+## AdvanceUsage
+
+Simple Usgae:
+```bash
+python3 konosuba.py <URL>
+```
+
+Usage with Cookies:
+```bash
+python3 konosuba.py -C '<Cookie>' <URL>
+```
+Usage with Multiple word-lists:
+```bash
+python3 konosuba.py -C '<Cookie>' -w <wordlit1.txt> <wordlist2.txt> <URL>
 ```
 
 ## Options
@@ -57,10 +74,12 @@ python konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
 - `-w, --wordlist`: Optional. Path to the wordlist containing LFI payloads. The default is `wordlist.txt`.
 - `-t, --threads`: Optional. Number of threads to use for testing (default is 1).
 
+- NOTE: The number of threads and wordlists must match example, if -w are wordlist1.txt wordlist2.txt then, -t must be 2.  [ -w <worlist1> <wordlist2> -t 2 ]
+
 ## Example
 
 ```bash
-python konosuba.py http://example.com -H "User-Agent: Mozilla/5.0" -C "sessionid=abc123" -w mywordlist.txt -t 4
+python3 konosuba.py http://example.com -H "User-Agent: Mozilla/5.0" -C "sessionid=abc123" -w mywordlist.txt
 ```
 
 ## Output
