@@ -47,7 +47,7 @@ Local File Inclusion (LFI) is a web vulnerability that allows an attacker to acc
 
 Run the script with the following command-line arguments:
 ```bash
-python3 konosuba.py <URL> [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS]
+python3 konosuba.py [-H HEADERS] [-C COOKIES] [-w WORDLIST] [-t THREADS] <URL>
 ```
 
 ## Options
